@@ -12,7 +12,7 @@ import static io.restassured.RestAssured.given;
 public class DeleteBooking extends BaseTest {
 
     @Test(description = "To delete the details of the booking IDs")
-    public void DeleteBooking() {
+    public void deleteBooking() {
         test.log(LogStatus.INFO, "Starting the test to delete booking details");
         /*
          * Send a DELETE request to /booking/{id}
