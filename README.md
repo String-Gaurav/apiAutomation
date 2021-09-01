@@ -44,7 +44,14 @@ Test Data sheet used to pass data in the API's `workingDir/Test_Data/TestData.xl
 
 ## Running Tests
 
-* **Run below commands from CMD**
+**Steps to Configure the project/framework**.
+
+- Clone the project to any location:- `git clone https://github.com/String-Gaurav/apiAutomation.git`
+- Import the project in Intellij/Eclipse.
+- Navigate to `workingDir/testng.xml`
+- Run the xml as Testng confiuration.
+
+* **You can  below commands from CMD**
 * **Same Commands can be configured in CICD tools like Jenkins, TeamCity**
 
 **MAVEN COMMANDS:-**
