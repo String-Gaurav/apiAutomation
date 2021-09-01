@@ -30,7 +30,7 @@ public class GetAllBookingIdByName extends BaseTest {
         Response getResponse = given().
                 spec(requestSpec).
                 queryParam("firstname", firstName).
-//                queryParam("lastname", lastName).
+                queryParam("lastname", lastName).
                 when().
                 get("/booking");
         //Verify the response code
