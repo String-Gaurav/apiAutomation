@@ -4,7 +4,9 @@ import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
+
 import static io.restassured.RestAssured.given; //import this
+
 import io.restassured.response.Response;
 import pojoClasses.BookingDetails;
 import utility.AllureLogger;
@@ -36,7 +38,6 @@ public class GetBooking extends BaseTest {
          * Send a GET request to /booking/{id}
          * and check that the response has HTTP status code 200
          ******************************************************/
-
         //Sending the GET request for a specific booking id and receiving the response
         test.log(LogStatus.INFO, "Getting the response for the Booking IDs from test data excel");
         Response response = given().
@@ -44,15 +45,11 @@ public class GetBooking extends BaseTest {
                 pathParam("id", ID).
                 when().
                 get("/booking/{id}");
-
         //Verify the response code
         AllureLogger.logToAllure("Asserting the response if the status code returned is 200");
         response.then().spec(responseSpec);
-
         //To log the response to report
         logResponseAsString(response);
-
-
         //Using the POJO class
         test.log(LogStatus.INFO, "Asserting of response body with the data from test data excel");
         AllureLogger.logToAllure("Asserting of response body with the data from test data excel");
