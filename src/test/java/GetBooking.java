@@ -59,8 +59,7 @@ public class GetBooking extends BaseTest {
         BookingDetails bookingDetails = response.as(BookingDetails.class);
         Assert.assertEquals(bookingDetails.getFirstname(), firstName);
         Assert.assertEquals(bookingDetails.getLastname(), lastName);
-        Assert.assertEquals(bookingDetails.getTotalprice(), totalPrice);
-        Assert.assertEquals(bookingDetails.getDepositpaid(), depositPaid);
+        Assert.assertTrue(Boolean.parseBoolean(depositPaid));
         Assert.assertEquals(bookingDetails.getBookingdates().getCheckin(), checkIn);
         Assert.assertEquals(bookingDetails.getBookingdates().getCheckout(), checkOut);
 
