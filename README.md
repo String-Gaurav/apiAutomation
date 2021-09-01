@@ -10,6 +10,7 @@
  Outline a brief description of this project.
 - Rest Assured Framework with TestNG, Maven, Extent Reporting, Allure Reporting.
 -  API Used -http://restful-booker.herokuapp.com/apidoc/index.html#api-Booking-GetBookings 
+-  Clone the project - git clone https://github.com/String-Gaurav/apiAutomation.git
 
 
 	
