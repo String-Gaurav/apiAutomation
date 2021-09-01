@@ -23,7 +23,6 @@ public class GetAllBookingIdByName extends BaseTest {
          * Send a GET request to /booking?firstname={firstName}&lastname={lastName}
          * and check that the response has HTTP status code 200
          **/
-
         //Sending the GET request for a specific booking id and receiving the response
 
         test.log(LogStatus.INFO, "Getting the response by giving the request as First and Last Name");
